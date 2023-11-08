@@ -1,0 +1,42 @@
+---
+# -------------------------------------- #
+# -------------- General --------------- #
+# -------------------------------------- #
+
+page__title: 'Giacchetta Networks'
+
+# -------------------------------------- #
+# ------------ Hero Section ------------ #
+# -------------------------------------- #
+
+hero__title: 'Blog'
+hero__description: 'Latest updates and Hand-picked resources.'
+
+
+# -------------------------------------- #
+# ------------ Blogs Section ----------- #
+# -------------------------------------- #
+
+blogs_tags_label: 'Tags:'
+blogs_input_search: 'Search articles'
+blogs_button_close_search: 'Close'
+
+blogs__pagination_next: 'Next'
+blogs__pagination_previous: 'Previous'
+
+# -------------------------------------- #
+# ---------- Subscribe Section --------- #
+# -------------------------------------- #
+
+subscribe__title: 'Stay in the know'
+subscribe__description: 'Get the latest developments from Giacchetta Networks.'
+
+subscribe__form_inputs: 
+  email:
+    label: 'Your Email'
+    placeholder: 'Your Email'
+
+subscribe__form_submit: 'Get Started'
+
+subscribe__additional_info: | # You can use HTML
+  You can unsubscribe at any time. Read our <a href="#">privacy policy</a>

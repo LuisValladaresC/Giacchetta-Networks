@@ -1,0 +1,80 @@
+---
+# -------------------------------------- #
+# ------------ Contacts Form ----------- #
+# -------------------------------------- #
+
+form__title: 'Drop us a message'
+
+# You can use HTML in the terms.label & newsletter.label properties
+form__inputs:
+  name:
+    label: 'Name'
+    placeholder: 'Jeff Fisher'
+    error_messages:
+      required: 'Please enter your name.'
+      validation: 'The name must be at least 3 characters'
+  email:
+    label: 'Email address'
+    placeholder: 'jackwayley@gmail.com'
+    error_messages: 
+      required: 'Please enter a valid email address.'
+      validation: 'Please enter a valid email address.'
+  phone:
+    label: 'Phone number'
+    placeholder: '1-800-643-4500'
+    error_messages: 
+      required: 'Please enter a valid phone number.'
+      validation: 'Please enter a valid phone number.'
+  message:
+    label: 'Message'
+    placeholder: 'Hi there, I would like to ...'
+    error_messages: 
+      required: 'Please enter a message.'
+      validation: 'The message must be at least 10 characters'
+  terms:
+    label: |
+      I agree to the <a class="link-underline" href="#" target="_blank">Terms & Conditions</a> and the <a class="link-underline" href="#" target="_blank">Privacy & Policy</a>.
+    error_message: 'Please accept our Privacy & Policy and Terms & Conditions.'
+  newsletter:
+    label: |
+      I want to receive Newsletters.
+
+form__submit: 'Send Message'
+
+form__success_modal:
+  title: 'Message sent!'
+  text: ''
+form__error_modal:
+  title: 'Error sending message!'
+  text: 'Please try again later.'
+
+# -------------------------------------- #
+# ------------ Contact Info ------------ #
+# -------------------------------------- #
+
+info__title: 'We''re here to help'
+
+info__items:
+  address:
+    title: 'Address'
+    values:
+      - link: |
+          100 E 7th Street<br>
+          Suite #0001<br>
+          Cheyenne, WY 82001<br>
+          USA
+        url: '#'
+  phone:
+    title: 'Phone Number'
+    values:
+      - link: '+1-800-000-0000'
+        url: '#'
+
+# info__logo: '@@autopath/assets/svg/customs/giacchetta-networks-logo-wide.svg'
+
+# You can use HTML
+info__copyright: '&copy; Giacchetta Networks LLC 2021. All rights reserved.'
+
+info__social_media:
+  twitter: '#'
+  linkedin: '#'

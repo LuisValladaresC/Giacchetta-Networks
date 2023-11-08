@@ -1,0 +1,298 @@
+{% extends "./partials/layout.html" %}
+
+{% block page_title %} 
+  <title>{{ index.page__title }}</title>
+{% endblock %}
+
+{% block css_plugins %}
+  <!-- CSS Implementing Plugins -->
+  <!-- bundlecss:vendor [@@autopath] -->
+  <link rel="stylesheet" href="@@autopath/assets/vendor/fontawesome/css/all.min.css"> <!-- General --> {# Content.FontAwesome #}
+  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css"> <!-- Header --> {# HSLibraries.HeaderMegaMenu #}
+  <link rel="stylesheet" href="@@autopath/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"> <!-- Hero --> {# OtherLibraries.FancyBox #}
+{% endblock %}
+
+{% block content %}
+  <!-- ========== HEADER ========== --> 
+  {% include "./partials/header.html" %}
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main">
+    <!-- Hero Section --> {# Hero.Component#2 #}
+    <div id="hero" class="gradient-y-gray position-relative">
+      <div class="space-top-3 mt-4 mt-lg-0 space-bottom-2 space-bottom-lg-3">
+        <div class="container mt-lg-11">
+          <!-- Content -->
+          <div class="row">
+            <div class="col-lg-5 col-xl-6">
+              <div class="{% if index.hero__video.url %} mb-5 {% else %} mb-8 {% endif %}">
+                <h1 class="d-none">{{ _layout.page_title }}</h1>
+                <p class="h1 display-4">{{ index.hero__title }}</p>
+                <p class="lead ml-1">{{ index.hero__subtitle }}</p>
+              </div>
+
+              {% if index.hero__video.url %}
+              <!-- Fancybox -->
+              <a class="js-fancybox video-player video-player-btn media align-items-center text-dark" href="javascript:;"
+                 data-hs-fancybox-options='{
+                   "src": "{{ index.hero__video.url }}",
+                   "caption": "{{ index.hero__video.caption }}",
+                   "speed": 700,
+                   "buttons": ["fullScreen", "close"],
+                   "youtube": {
+                     "autoplay": 1
+                   }
+                 }'>
+                <span class="video-player-icon shadow-soft mr-3">
+                  <i class="fa fa-play"></i>
+                </span>
+                <span class="media-body">
+                  {{ index.hero__video.link }}
+                </span>
+              </a>
+              <!-- End Fancybox -->
+              {% endif %}
+            </div>
+          </div>
+          <!-- End Content -->
+        </div>
+
+        <!-- SVG Shape --> {# Hero.Component#1 #}
+        <figure class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 right-0 pr-0 ie-main-hero" style="margin-top: 6.5rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1137.5 979.2" style="max-height: 700px;">
+            <path fill="#F9FBFF" d="M565.5,957.4c81.1-7.4,155.5-49.3,202.4-115.7C840,739.8,857,570,510.7,348.3C-35.5-1.5-4.2,340.3,2.7,389
+              c0.7,4.7,1.2,9.5,1.7,14.2l29.3,321c14,154.2,150.6,267.8,304.9,253.8L565.5,957.4z"/>
+            <defs>
+              <path id="mainHeroSVG1" d="M1137.5,0H450.4l-278,279.7C22.4,430.6,24.3,675,176.8,823.5l0,0C316.9,960,537.7,968.7,688.2,843.6l449.3-373.4V0z"/>
+            </defs>
+            <clipPath id="mainHeroSVG2">
+              <use xlink:href="#mainHeroSVG1"/>
+            </clipPath>
+            <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#mainHeroSVG2)">
+              <image width="750" height="750" xlink:href="{{ index.hero__image }}" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
+            </g>
+          </svg>
+        </figure>
+        <!-- End SVG Shape -->
+      </div>
+
+      <!-- SVG Bottom Shape -->
+      <figure>
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+          <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"/>
+        </svg>
+      </figure>
+      <!-- End SVG Bottom Shape -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Services Section --> {# Features.General.Component#9 #}
+    <div id="services" class="container space-top-2 space-top-lg-3">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="d-block small font-weight-bold text-cap mb-2 text-uppercase">{{ index.services__title }}</span>
+        <h2 class="h1">{{ index.services__subtitle }}</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="row justify-content-center">
+        {% for service in index.services %}
+          <div class="col-md-4 mb-7">
+            <!-- Icon Blocks -->
+            <div class="text-center px-lg-3">
+              <figure class="max-w-8rem mx-auto mb-4">
+                <img class="img-fluid" src="{{ service.image }}">
+              </figure>
+              <h3>
+                {% if service.url %}
+                <a class="text-dark" href="{{ service.url }}">
+                  {{ service.title }}
+                </a>
+                {% else %}
+                {{ service.title }}
+                {% endif %}
+              </h3>
+              <p>{{ service.description }}</p>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+        {% endfor %}
+      </div>
+
+      <img class="img-fluid d-none d-md-block w-75 mx-auto mb-7" src="@@autopath/assets/svg/components/three-pointers.svg">
+
+      <div class="position-relative w-lg-75 mx-lg-auto mb-4">
+        <!-- Info --> {# Collapse/Accordion.Component#2 #}
+        <div class="container text-center">
+          {{ index.services__synthesis.main | markdown | safe }}
+
+          <!-- Read More - Collapse -->
+          <div class="collapse" id="collapseDescriptionSection">
+            {{ index.services__synthesis.collapsible | markdown | safe }}
+          </div>
+          <!-- End Read More - Collapse -->
+
+          <!-- Link -->
+          <a class="link link-collapse small font-size-1 font-weight-bold pt-1" data-toggle="collapse" href="#collapseDescriptionSection" role="button" aria-expanded="false" aria-controls="collapseDescriptionSection">
+            <span class="link-collapse-default">Read more</span>
+            <span class="link-collapse-active">Read less</span>
+            <span class="link-icon ml-1">+</span>
+          </a>
+          <!-- End Link -->
+        </div>
+        <!-- End Info -->
+      </div>
+    </div>
+    <!-- End Services Section -->
+
+    <!-- Projects Section --> {# Portfolio.Component#7 #}
+    <div id="projects" class="container space-top-2 space-top-lg-3">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="d-block small font-weight-bold text-cap mb-2 text-uppercase">{{ index.projects__title }}</span>
+        <h2 class="h1">{{ index.projects__subtitle }}</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="card-md-columns card-md-2-count card-md-2-gap card-lg-5-gap pt-md-11">
+        {% for project in index.projects %}
+          <!-- Card -->
+          <a class="card shadow-none text-indigo transition-3d-hover p-4 p-lg-7 {% if loop.first %} mt-md-n11 {% endif %} mb-3 mb-sm-5 mb-lg-11 {{ project.background_color_class }}" href="{{ project.url }}">
+            <img class="img-fluid mb-7" src="{{ project.image }}" >
+
+            <h3 class="mb-1">{{ project.title }}</h3>
+            <small class="d-block mb-3">{{ project.category }}</small>
+            <div class="text-dark">
+              {{ project.description | markdown | safe }}
+            </div>
+          </a>
+          <!-- End Card -->
+        {% endfor %}
+
+        <div class="p-1"></div>
+      </div>
+    </div>
+    <!-- End Projects Section -->
+
+    <!-- About Section --> {# Testimonials.Component#4 #}
+    <div id="about" class="container space-top-1 space-top-lg-2 space-bottom-3  space-bottom-lg-5">
+      <!-- Title -->
+      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="d-block small font-weight-bold text-cap mb-2 text-uppercase">{{ index.about__title }}</span>
+        <h2>{{ index.about__subtitle }}</h2>
+      </div>
+      <!-- End Title -->
+
+      <div class="row justify-content-md-center align-items-md-center">
+        {% for person in index.about__team %}
+          <div class="col-md-5 mb-11 mb-md-0">
+            <div class="position-relative {% if loop.index % 2 == 0 %} text-right {% endif %}">
+              <img class="img-fluid rounded-lg" src="{{ person.image }}" alt="{{ person.name }}">
+
+              <div class="card mt-n9 mx-3">
+                <div class="card-body text-center">
+                  <p class="font-size-1 mb-1">{{ person.title }}</p>
+                  <h4 class="mb-2">{{ person.name }}</h4>
+
+                  <!-- Social Networks -->
+                  <ul class="list-inline mb-0 mt-2">
+                    <li class="list-inline-item">
+                      <a class="btn btn-xs btn-icon btn-soft-secondary rounded-lg" href="mailto:{{ person.email }}">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-xs btn-icon btn-soft-secondary rounded-lg" href="{{ person.twitter }}" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn btn-xs btn-icon btn-soft-secondary rounded-lg" href="{{ person.linkedin }}" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End Social Networks -->
+                </div>
+              </div>
+
+              <!-- SVG Elements -->
+              <figure class="max-w-19rem w-100 position-absolute z-index-n1 {% if loop.index % 2 != 0 %} bottom-0 left-0 mb-10 {% else %} top-0 right-0 mt-n7 {% endif %}">
+                <div class="mb-n7 {% if loop.index % 2 != 0 %} ml-n7 {% else %} mr-n7 {% endif %}">
+                  <img class="img-fluid" src="@@autopath/assets/svg/components/dots-2.svg">
+                </div>
+              </figure>
+              <!-- End SVG Elements -->
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- End About Section -->
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  {% include "./partials/footer.html" %}
+  <!-- ========== END FOOTER ========== -->
+
+  {% include "./partials/go-to.html" %}
+{% endblock %}
+
+{% block js_plugins %}
+  <!-- JS Implementing Plugins -->
+  <!-- bundlejs:vendor [@@autopath] -->
+  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script> <!-- Header --> {# HSLibraries.Headers #}
+  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script> <!-- Header --> {# HSLibraries.HeaderMegaMenu #}
+  <script src="@@autopath/assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script> <!-- Header --> {# HSLibraries.Unfold #}
+  <script src="@@autopath/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>  <!-- Hero --> {# OtherLibraries.FancyBox #}
+  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script> <!-- Go-to --> {# HSLibraries.Go-to #}
+  <script src="@@autopath/node_modules/jquery-validation/dist/jquery.validate.min.js"></script> <!-- Footer --> {# OtherLibraries.Validation #}
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script> <!-- Footer --> {# https://sweetalert2.github.io/ #}
+
+  <!-- JS Front -->
+  <!-- bundlejs:theme [@@autopath] -->
+  <script src="@@autopath/assets/js/hs.core.js"></script>
+  <script src="@@autopath/assets/js/hs.fancybox.js"></script>  <!-- Hero --> {# OtherLibraries.FancyBox #}
+  <script src="@@autopath/assets/js/hs.validation.js"></script> <!-- Footer --> {# OtherLibraries.Validation #}
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+
+
+      // INITIALIZATION OF UNFOLD
+      // =======================================================
+      var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+
+      // INITIALIZATION OF FANCYBOX
+      // =======================================================
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  {% from "./partials/header.html" import headerLanguageScript with context %}
+  {{ headerLanguageScript() }}
+
+  {% from "./partials/footer.html" import contactFormScript with context %}
+  {{ contactFormScript() }}
+{% endblock %}

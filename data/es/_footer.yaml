@@ -1,0 +1,80 @@
+---
+# -------------------------------------- #
+# ------------ Contacts Form ----------- #
+# -------------------------------------- #
+
+form__title: 'Dejanos un mensaje'
+
+# You can use HTML in the terms.label & newsletter.label properties
+form__inputs:
+  name:
+    label: 'Nombre'
+    placeholder: 'Juan Perez'
+    error_messages:
+      required: 'Introduzca su nombre aqui'
+      validation: 'El nombre debe tener al menos 3 letras'
+  email:
+    label: 'Direccion de Correo'
+    placeholder: 'juanperez@gmail.com'
+    error_messages: 
+      required: 'Introduzca una direccion de correo valida.'
+      validation: 'Introduzca una direccion de correo valida.'
+  phone:
+    label: 'Numero Telefonico'
+    placeholder: '1-800-643-4500'
+    error_messages: 
+      required: 'Ingrese un numbero valido de telefono.'
+      validation: 'Ingrese un numbero valido de telefono.'
+  message:
+    label: 'Mensaje'
+    placeholder: 'Hola, me gustaria...'
+    error_messages: 
+      required: 'Introduzca un mensaje.'
+      validation: 'El mensaje debe tener al menos 10 letras'
+  terms:
+    label: |
+      Acepto los <a class="link-underline" href="#" target="_blank">Terminos y Condiciones</a>; y la <a class="link-underline" href="#" target="_blank">Politica de Privacidad</a>.
+    error_message: 'Por favor, acepte los Terminos y Condiciones; y la Politica de Privacidad.'
+  newsletter:
+    label: |
+      Quiero recibir Newsletters.
+
+form__submit: 'Enviar Mensaje'
+
+form__success_modal:
+  title: 'Mensaje Enviado!'
+  text: ''
+form__error_modal:
+  title: 'Error enviando mensaje!'
+  text: 'Por favor, intente mas tarde.'
+
+# -------------------------------------- #
+# ------------ Contact Info ------------ #
+# -------------------------------------- #
+
+info__title: 'Estamos para ayudar'
+
+info__items:
+  address:
+    title: 'Direccion'
+    values:
+      - link: |
+          100 E 7th Street<br>
+          Suite #0001<br>
+          Cheyenne, WY 82001<br>
+          USA
+        url: '#'
+  phone:
+    title: 'Telefonos'
+    values:
+      - link: '+1-800-000-0000'
+        url: '#'
+
+# info__logo: '@@autopath/assets/svg/customs/giacchetta-networks-logo-wide.svg'
+
+# You can use HTML
+info__copyright: '&copy; Giacchetta Networks LLC 2021. Todos los derechos reservados.'
+
+info__social_media:
+  twitter: '#'
+  linkedin: '#'

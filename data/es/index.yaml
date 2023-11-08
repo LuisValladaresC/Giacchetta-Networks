@@ -1,0 +1,103 @@
+---
+# -------------------------------------- #
+# -------------- General --------------- #
+# -------------------------------------- #
+
+page__title: 'Giacchetta Networks - Negocios - Proyectos - Marketing'
+
+# -------------------------------------- #
+# ------------ Hero Section ------------ #
+# -------------------------------------- #
+
+hero__title: 'Descubra como innovar más rápido'
+hero__subtitle: 'Con nuestra red de servicios perfectamente sincronizada para el desarrollo de cualquier proyecto IT. Trabajamos sobre proyectos propios y de terceros. Entregamos a tiempo y bajo costo!!'
+hero__video:
+  link: 'How it works'
+  url: ''
+  caption: ''
+hero__image: '@@autopath/assets/img/750x750/img2.jpg'
+
+# -------------------------------------- #
+# ---------- Services Section ---------- #
+# -------------------------------------- #
+
+services__title: Servicios
+services__subtitle: Construyendo mejoras continuas para innovar mas rapido
+
+services:
+  - title: 'Desarrollo de Negocios'
+    description: 'Crear valor a largo plazo para una organización a partir de clientes, mercados y relaciones. Haciendo foco en las rápidas redes de negocios.'
+    image: '@@autopath/assets/svg/icons/icon-5.svg'
+    url: '#'
+
+  - title: 'Desarrollo de Proyectos'
+    description: 'Diseñar flujos de trabajo ágiles para potenciar sus proyectos y su equipo. Identifica cuellos de botella y libera tu mente para construir mejores ideas.'
+    image: '@@autopath/assets/svg/icons/icon-14.svg'
+    url: '@@autopathwithlang/project-development.html'
+
+  - title: 'Desarrollo de Marketing'
+    description: 'Definir una estrategia de marketing ampliando el mercado potencial a través de nuevos usuarios o nuevos usos. Identificación de nuevos segmentos de mercado para productos actuales.'
+    image: '@@autopath/assets/svg/icons/icon-29.svg'
+    url: '#'
+
+# You can use Markdown and HTML
+services__synthesis: 
+  main: |
+    Ayudamos a las empresas en tres capas esenciales: Desarrollo de Marketing, Negocios y Proyectos. Así, nuestro calificado equipo de profesionales empresariales analiza su solicitud y elabora un plan de acción que cumpla con todas sus expectativas.
+  collapsible: |
+    Nuestro primer objetivo es escucharte, por que para innovar en un mundo tan competitivo; no podemos duplicar lo que hacen otros. Innovar significa ser original y disruptivo.
+
+    Concentrándose en la gestión de proyectos, ayudamos a las empresas a construir asociaciones sólidas y crecer más rápido. Un equipo dedicado de directores de proyectos garantizará el camino correcto.
+
+
+# -------------------------------------- #
+# ---------- Projects Section ---------- #
+# -------------------------------------- #
+
+projects__title: Proyectos
+projects__subtitle: Estamos ayudando a esos proyectos a innovar más rápido.
+
+projects:
+  - title: 'Moegui'
+    #category: 'Desarrollo de Proyectos'
+    description: |
+      Moegui es una empresa de consultoría que se enfoca en generar valor continuo y entrega más rápido. El objetivo de la empresa es siempre tener en cuenta que, pase lo que pase, ayudamos a las empresas a crecer desde cero y les proporcionamos todos los recursos para innovar.
+
+      Desde servicios de consultoría directa en DevOps, TestOps y SecOps hasta AWS, GCP y Azure Stacks seleccionados, Moegui ofrece la mejor solución para cualquier proyecto o presupuesto.
+
+    url: '#'
+    image: '@@autopath/assets/svg/illustrations/knowledgebase-community-1.svg'
+    background_color_class: 'bg-soft-primary'
+
+  - title: 'CarahAI'
+    #category: 'Desarrollo de Proyectos'
+    description: |
+      CarahAI es una empresa SaaS que aplica un enfoque de aprendizaje por práctica, brindando a nuestros clientes una nueva forma de autoformación de sus empleados. Ofrecemos desde carreras hasta asignaturas individuales para aprovechar el conocimiento de su equipo.
+
+      Utilizando prácticas seleccionadas, proporcionamos un camino directo hacia el éxito, otorgando una caja de arena para cada aprendiz y apoyo humano para cualquier pregunta.
+
+    url: '#'
+    image: '@@autopath/assets/img/mockups/img13.png'
+    background_color_class: 'bg-soft-info'
+
+# -------------------------------------- #
+# ------------ About Section ----------- #
+# -------------------------------------- #
+
+about__title: Conozcanos
+about__subtitle: Conozca al equipo
+
+about__team:
+  - name: 'Giselle Yoshimiya'
+    title: 'Business & Marketing Manager'
+    image: '@@autopath/assets/img/customs/giselle.png'
+    email: ''
+    twitter: '#'
+    linkedin: '#'
+
+  - name: 'Luciano Giacchetta'
+    title: 'IT Project Manager & DevOps Expert'
+    image: '@@autopath/assets/img/customs/luciano.png'
+    email: ''
+    twitter: '#'
+    linkedin: '#'

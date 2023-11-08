@@ -1,0 +1,23 @@
+---
+header__logo: '@@autopath/assets/svg/customs/giacchetta-networks-logo-wide.svg'
+
+header__nav_items:
+  - link: 'Servicios'
+    url: '@@autopathwithlang/#services'
+
+  - link: 'Proyectos'
+    url: '@@autopathwithlang/#projects'
+
+  - link: 'Conozcanos'
+    url: '@@autopathwithlang/#about'
+    
+  - link: 'Contacto'
+    url: '#contact'
+
+  - link: 'Blog'
+    url: '@@autopathwithlang/blog/'
+
+header__languages:
+  english: 'English'
+  spanish: 'Español'
+  portuguese: 'Português'

@@ -1,0 +1,240 @@
+---
+# This array defines each of the pages that will be created using the "Services" template
+
+# The 'page_config.file_name' attribute defines the name and path of the page to be created
+# The 'page_config.head_title' attribute defines the name of the tab in the browser and helps improve SEO
+
+# The 'content' attribute defines the main content of the page and uses some default styles that are added automatically.
+# It is important to mention only one of them within these styles and they are the level 2 titles. 
+# These headings (h2) have a margin and a top border added to separate the different sections of the content (except the h2 adjacent to the `Hero`)
+
+# To define the button and custom link "Read more" add the following code:
+# <a href="#" class="link font-weight-bold">Read more <span class="link-icon ml-1">+</span></a>
+
+- page_config: 
+    file_name: 'project-development.html'
+    head_title: 'Project Development'
+  title: 'Project Development'
+  description: 'Learn about the design and implementation of the development of our projects'
+  content: |
+    ## [Cloud Architecture](@@autopathwithlang/cloud-architecture.html)
+
+    ![](@@autopath/assets/img/900x450/img13.jpg)
+
+    There are numerous languages and programming structures with which we can develop our applications quickly and easily. Many technology investors hire developers to start their projects to have a minimum viable product (MVP) as soon as possible.
+
+    As soon as possible is very important for an efficient return on investment. When this minimum viable product is launched and publicized to the market, it is necessary to have a Cloud Architect design a scalable service infrastructure to the needs of the product...
+
+    <a href="./cloud-architecture.html" class="link font-weight-bold">Read more <span class="link-icon ml-1">+</span></a>
+
+    ## [Agile Scrum](@@autopathwithlang/agile-scrum.html)
+
+    ![](@@autopath/assets/img/900x450/img12.jpg)
+
+    Selected by the most demanding teams around the world, Scrum is the framework that allows all project owners to capture their ideas as stories, and with the help of the development team, break them down into tasks that will go to an ordered list of what is needed to improve the product.
+
+    Thus, during the planning meeting and starting from this ordered list of tasks, the Scrum Master, with the help of the development team, will estimate these tasks and assign them to a new iteration to start the work...
+    
+    <a href="./agile-scrum.html" class="link font-weight-bold">Read more <span class="link-icon ml-1">+</span></a>
+
+    ## [Agile Kanban](@@autopathwithlang/agile-kanban.html)
+
+    ![](@@autopath/assets/img/900x450/img11.jpg)
+
+    Without a doubt the oldest and most functional framework for all types of projects, not just programming development. Kanban focuses on real-time communication and a complete and organized visualization of work.
+
+    Kanban is the perfect choice for an agile team where tasks arrive unpredictably or when you want to implement work as soon as possible instead of waiting for a series of rituals, like those of Scrum...
+    
+    <a href="./agile-kanban.html" class="link font-weight-bold">Read more <span class="link-icon ml-1">+</span></a>
+
+    ## [Agile Reporting](@@autopathwithlang/agile-reporting.html)
+
+    ![](@@autopath/assets/img/900x450/img14.jpg)
+
+    Most organizations employ an annual or semi-annual planning cycle for the execution of their objectives. The stakeholders or the project owner do not have time to observe the same day-to-day evolution.
+
+    Thus, they require a weekly report on how the project is evolving. Agile reports will help them observe, approve, and manage the funds allocated to project resources to identify when they invest the money...
+
+    <a href="./agile-reporting.html" class="link font-weight-bold">Read more <span class="link-icon ml-1">+</span></a>
+
+- page_config:
+    file_name: 'cloud-architecture.html'
+    head_title: 'Cloud Architecture'
+  title: 'Cloud Architecture'
+  description: ''
+  content: |
+    There are numerous languages and programming structures with which we can develop our applications quickly and easily. Many technology investors hire developers to start their projects to have a minimum viable product (MVP) as soon as possible.
+
+    As soon as possible is very important for an efficient return on investment. When this minimum viable product is launched and publicized to the market, it is necessary to have a Cloud Architect design a scalable service infrastructure to the needs of the product.
+
+    Whether your architecture is based on a Public, Private or Hybrid cloud, it is essential that you have an architect, just as you need him to design a house or building, who knows all the options available in the market and recommends alternatives according to the available budget to get the product finished.
+
+    ## Key Traits of a Cloud Architect
+
+    - **Strategic**
+
+    An architect must identify appropriate technologies for the project to be implemented, focusing on scalability, support, and the best possible return on investment time.
+
+    - **Planner**
+
+    As a project manager, the architect must guide the development team from the beginning to the end of the project, considering any unforeseen or complexity.
+
+    - **Clarity**
+
+    An architect must understand and communicate the solution to any complex problem to all team members.
+
+    - **Detailed**
+
+    With so many parties involved in the development process, an architect must understand and communicate the nuances of business requirements, functionalities, and maintenance needs.
+
+    - **Collaborative**
+
+    As the center of the development process, an architect must lead and influence stakeholders within the organization.
+    
+    ## Public, Private, and Hybrid Clouds
+
+    Public clouds are configured in the same way as private clouds. Both use several technologies to virtualize resources in shared groups, add an administrative control system to the entire environment, and create automated self-service functions. Together, these technologies create a cloud that will be private, if it comes from systems reserved for and managed by the people who use them; or public, if it is offered as a shared resource to multiple users. On the other hand, a hybrid cloud is a combination of two or more interconnected public or private cloud environments.
+
+    ## Public Clouds
+
+    1. **Amazon Web Service ( AWS )**
+
+    AWS has several services and features included in them that exceed that of any other cloud provider, offering everything from infrastructure technologies such as compute, storage, and databases to emerging technologies such as machine learning and artificial intelligence, data lakes and analysis, and the internet things.
+
+    2. **Microsoft Azure**
+
+    The Azure platform comprises more than 200 cloud products and services designed to help you bring new solutions to life that solve today's challenges and create the future. Build, run, and manage applications across multiple clouds, on-premises, and at the edge with the tools and frameworks of your choice.
+
+    3. **Google Cloud**
+
+    Google Cloud consists of a collection of physical resources, such as computers and hard drives, and virtual resources, such as virtual machines (VMs), found in Google data centers worldwide. Each data center is located in a region, specifically Asia, Australia, Europe, North America, and South America. Each region is a collection of zones isolated from each other within each region.
+
+    ## Why choose us?
+
+    Our Architects, with more than 20 years of experience working in private cloud architectures, now certified in the three most significant Public clouds such as Amazon Web Services, Microsoft Azure, and Google Cloud, can survey, propose, design, and implement any project, be it in the Public, Private and Hybrid cloud.
+
+    **Do you need an interview?** Contact us, and we will gladly help you with your project.
+
+- page_config:
+    file_name: 'agile-scrum.html'
+    head_title: 'Agile Scrum'
+  title: 'Agile Scrum'
+  description: ''
+  content: |
+    Selected by the most demanding teams around the world, Scrum is the framework that allows all project owners to capture their ideas as stories, and with the help of the development team, break them down into tasks that will go to an ordered list of what is needed to improve the product.
+
+    Thus, during the planning meeting and starting from this ordered list of tasks, the Scrum Master, with the help of the development team, will estimate these tasks and assign them to a new iteration to start the work.
+
+    Once the iteration begins, usually between 2 and 4 weeks, a series of meetings are planned. A short daily meeting where we track and discuss how the iteration is proceeding. A weekly meeting to review and plan the next iteration and, last but not least, an end of iteration meeting to check what was wrong and improve these problems in the next iteration.
+
+    ## Agile Scrum Roles
+
+    Starting a project under the Scrum framework requires defining roles that will fulfill each of the predefined tasks.
+
+    - **Product Owner:** He/She is responsible for maximizing the values of a product as a result of the development team's work.
+
+    - **Scrum Master:** He/She is responsible for the correct execution of Scrum. It helps all team members understand the Scrum framework and how to put it into practice efficiently.
+
+    - **Development Team:** They are the people in Scrum responsible for creating any increase in value in each iteration. Plus, they help with estimating and planning.
+
+    ## Agile Scrum Meetings
+    
+    Scrum requires a series of specific rituals which are aimed at fluid communication between team members. Scrum is an agile framework, and as the manifesto indicates, unique collaboration towards the team is a core value.
+
+    - **Quick Follow-up:** This is a short meeting, top 15 minutes, where the Scrum Master reviews the iteration's progress with all team members. Each of the members exposes what their progress was or where they have been blocked.
+
+    - **Iteration Planning:** This is a weekly meeting, which should not take more than 1 hour, where the members of the development team collaborate in the planning of the next iteration with the help of the Scrum Master.
+
+    - **Iteration Retrospective:** This is a meeting held at the end of each iteration where the work team and the Scrum Master evaluate what problems were found and how those problems were (or were not) solved.
+
+    ## Agile Scrum Artifacts
+
+    Scrum includes a series of artifacts that are very useful for correct planning and delivery on time, although they are not mandatory.
+
+    - **Product Backlog:** The backlog is an ordered list of tasks created and agreed upon by the work team during planning meetings. They usually arise from the decomposition of the Stories proposed by the Product Owner or new improvements discovered during the Iteration development.
+
+    - **Product Stories:** Product stories are generated by the Product Owner and represent the purest form of the idea to be developed. Generally, these stories reflect the need of a User or the Business itself. The stories are broken down into Tasks by the work team.
+
+    - **Product Tasks:** Product tasks are implementing the development team based on the product stories or their ideas for improvements.
+
+    - **Definition of Done:** Definition of Done defines precisely what is considered finished. Thus, the requirements that the work must meet to be considered finished are detailed.
+
+    - **Iteration Goal:** At the beginning of each iteration, you must specify the objective to be met. This is the goal that will be evaluated in the retrospective meeting.
+
+    - **Story points:** These are units of measure that allow expressing an estimate of the total effort that the team will have to make to fully implement an element of the product backlog or any other work
+
+- page_config:
+    file_name: 'agile-kanban.html'
+    head_title: 'Agile Kanban'
+  title: 'Agile Kanban'
+  description: ''
+  content: |
+    Without a doubt the oldest and most functional framework for all types of projects, not just programming development. Kanban focuses on real-time communication and a complete and organized visualization of work.
+
+    Kanban is the perfect choice for an agile team where tasks arrive unpredictably or when you want to implement work as soon as possible instead of waiting for a series of rituals, like those of Scrum.
+
+    Kanban is widely used for agile management in Marketing, Operations, Industry projects, and all kinds of tasks where monitoring is done visually and in real-time.
+
+    ## Agile Kanban Roles
+
+    Unlike other agile frameworks, Kanban does not have well-defined roles, but we can exemplify some widely used ones.
+    
+    - **Team Leader:** He/She is responsible for the development team, usually taking the role of Agile Coach, guiding the rest of the team through the Kanban process of continuous delivery.
+
+    - **Agile Coach:** Little has seen, but he/she is the person who advises and trains the team for effective management and delivery. He usually works on multiple teams simultaneously.
+
+    - **Development Team:** They are the people on the development team who add value to the continuous delivery of the project. They actively participate in the management of the project.
+
+    ## Agile Kanban Meetings
+
+    Scrum requires a series of specific rituals which are aimed at fluid communication between team members. Since Kanban is an agile, visual, and collaborative framework, communication is vital.
+
+    - **Quick Follow-up:** This is a short meeting of no more than 15 minutes, where the Team Leader reviews progress with all team members. Each of the members exposes what their progress was or where they have been blocked.
+
+    - **Task Planning:** This is a weekly meeting, which should not take more than 1 hour, where members of the development team collaborate to create new tasks. For service projects, many of these may come directly from Customer requirements for immediate treatment.
+
+    ## Agile Kanban Artifacts
+
+    Kanban includes a series of objects that are very useful for correct planning and delivery on time, although they are not mandatory.
+    
+    - **Product Backlog:** The backlog is an ordered list of tasks created and agreed upon by the work team during planning meetings.
+
+    - **Product Tasks:** Product tasks are implementing the development team based on the product stories or their ideas for improvements.
+
+    - **Definition of Done:** Definition of Done defines precisely what is considered finished. Thus, the requirements that the work must meet to be considered finished are detailed.
+    
+    - **Work in Progress Limit (WIP):** Limiting the amount of work in progress makes it easier to identify inefficiency in a team's workflow. Bottlenecks in a team's delivery pipeline are visible before a situation becomes dire.
+
+- page_config:
+    file_name: 'agile-reporting.html'
+    head_title: 'Agile Reporting'
+  title: 'Agile Reporting'
+  description: ''
+  content: |
+    Most organizations employ an annual or semi-annual planning cycle for the execution of their objectives. The stakeholders or the project owner do not have time to observe the same day-to-day evolution.
+
+    Thus, they require a weekly report on how the project is evolving. Agile reports will help them observe, approve, and manage the funds allocated to project resources to identify when they invest the money and when they should go to fund to continue development.
+
+    ## Agile Sprint Burndown
+
+    This report represents an easy (visual) way to follow up on the fulfillment or not of the objectives imposed in an iteration. It provides near real-time updates on iteration progress and compliance. It is generated weekly for the iteration duration and helps the Scrum Master see the fulfillment of the estimated objectives.
+
+    ![](@@autopath/assets/img/customs/burndown.png)
+
+    ## Agile EPIC|Release Burnup
+
+    This report represents an easy (visual) way to follow up on the fulfillment or not of the objectives imposed in an EPIC or Release. It is used similarly to the Sprint Burndown but is more effective for tracking long-term, less plannable goals. It is generated weekly and serves as a complement to the Sprint Report to see the general progress of the EPIC | Release.
+
+    ![](@@autopath/assets/img/customs/burnup.png)
+
+    ## Agile Sprint Velocity
+
+    This report represents an easy (visual) way to track the number of story points that a work team can manage during each iteration. It is generated at the end of each iteration and is cumulative to subsequent ones. Visually we can understand our team's capacity for future iterations and thus not exceed the capabilities.
+
+    ![](@@autopath/assets/img/customs/velocity.png)
+
+    ## Agile Sprint Reports
+
+    This iteration report informs all team members of the current status of the progress of the Tasks, their estimate of working time, and their actual working time invested. The number of hours worked by iteration and the accumulated by EPIC | Release is controlled. In addition, it includes a brief report of which Issues were terminated, which have been moved to another iteration, or which have been joined for simplicity (closely related topics). Finally, the Risks and Blockages during the iteration and access to the Meeting Notes, both for daily monitoring, planning, and retrospectively.
+
+    ![](@@autopath/assets/img/customs/sprintreport.png)

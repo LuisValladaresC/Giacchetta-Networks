@@ -1,0 +1,239 @@
+{# Footers.Component#7 #}
+<footer id="contact" class="bg-dark position-relative">
+  <div class="container space-bottom-1 position-relative z-index-2">
+    <div class="row justify-content-lg-between mb-11">
+      <!-- Contact Info -->
+      <div class="col-lg-5 space-top-2 space-top-lg-3 text-white mb-7 mb-lg-0">
+        <h2 class="h1 text-white mb-7">{{ _footer.info__title }}</h2>
+
+        <div class="row">
+          <!-- Address -->
+          <div class="col-sm-6 mb-5">
+            <span class="icon icon-soft-light icon-circle mb-3">
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <h4 class="text-white mb-0">{{ _footer.info__items.address.title }}</h4>
+
+            {% for value in _footer.info__items.address.values %}
+            <address class="{% if loop.index > 1 %} mt-3 {% endif %}">
+              <a class="text-white-70 font-size-1" href="{{ value.url }}" target="_blank" >
+                {{ value.link | safe }}
+              </a>
+            </address>
+            {% endfor %}
+          </div>
+          <!-- End Address -->
+          
+          <!-- Phone Number -->
+          <div class="col-sm-6 mb-5">
+            <span class="icon icon-soft-light icon-circle mb-3">
+              <i class="fas fa-phone"></i>
+            </span>
+            <h4 class="text-white mb-0">{{ _footer.info__items.phone.title }}</h4>
+            
+            {% for value in _footer.info__items.phone.values %}
+            <div>
+              <a class="text-white-70 font-size-1" href="{{ value.url }}" target="_blank" >
+                {{ value.link }}
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+          <!-- End Phone Number -->
+        </div>
+      </div>
+      <!-- End Contact Info -->
+
+      <!-- Contact Form -->
+      <div class="col-lg-6 mt-lg-n11">
+        <form id="contactForm" class="js-validate card p-5">
+          <div class="mb-4">
+            <h3>{{ _footer.form__title }}</h3>
+          </div>
+
+          <div class="row mx-n2">
+            <div class="col-md-12 px-2 mb-3">
+              <!-- Input -->
+              <label class="sr-only">{{ _footer.form__inputs.name.label }}</label>
+
+              <div class="js-form-message">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="name" placeholder="{{ _footer.form__inputs.name.placeholder }}" aria-label="{{ _footer.form__inputs.name.placeholder }}" required>
+                </div>
+              </div>
+              <!-- End Input -->
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col-md-6 px-2 mb-3">
+              <!-- Input -->
+              <label class="sr-only">{{ _footer.form__inputs.email.label }}</label>
+
+              <div class="js-form-message">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="email" placeholder="{{ _footer.form__inputs.email.placeholder }}" aria-label="{{ _footer.form__inputs.email.placeholder }}" required>
+                </div>
+              </div>
+              <!-- End Input -->
+            </div>
+
+            <div class="col-md-6 px-2 mb-3">
+              <!-- Input -->
+              <label class="sr-only">{{ _footer.form__inputs.phone.label }}</label>
+
+              <div class="js-form-message">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="phone" placeholder="{{ _footer.form__inputs.phone.placeholder }}" aria-label="{{ _footer.form__inputs.phone.placeholder }}" required>
+                </div>
+              </div>
+              <!-- End Input -->
+            </div>
+
+          </div>
+
+          <!-- Input -->
+          <div class="mb-5">
+            <label class="sr-only">{{ _footer.form__inputs.message.label }}</label>
+
+            <div class="js-form-message input-group">
+                <textarea class="form-control" rows="4" name="message" placeholder="{{ _footer.form__inputs.message.placeholder }}" aria-label="{{ _footer.form__inputs.message.placeholder }}" required></textarea>
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <!-- Checkbox -->
+          <div class="js-form-message mb-3">
+            <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+              <input type="checkbox" class="custom-control-input" id="terms" name="terms" required>
+              <label class="custom-control-label" for="terms">
+                <small>
+                  {{ _footer.form__inputs.terms.label | safe }}
+                </small>
+              </label>
+            </div>
+          </div>
+          <!-- End Checkbox -->
+
+          <!-- Checkbox -->
+          <div class="js-form-message mb-5">
+            <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+              <input type="checkbox" class="custom-control-input" id="newsletter" name="newsletter">
+              <label class="custom-control-label" for="newsletter">
+                <small>
+                  {{ _footer.form__inputs.newsletter.label | safe }}
+                </small>
+              </label>
+            </div>
+          </div>
+          <!-- End Checkbox -->
+
+          <button type="submit" class="btn btn-primary btn-pill btn-wide transition-3d-hover">{{ _footer.form__submit }}</button>
+        </form>
+      </div>
+      <!-- End Contact Form -->
+    </div>
+
+    <div class="text-center">
+      <!-- Logo -->
+      <div class="d-inline-flex align-items-center mb-2">
+        <img class="brand" style="max-width: 14rem;" src="{{ _footer.info__logo }}" alt="{{ __layout.page_title }}">
+      </div>
+      <!-- End Logo -->
+
+      <p class="small text-white-70">{{ _footer.info__copyright | safe }}</p>
+
+      <!-- Social Networks -->
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item">
+          <a class="btn btn-md btn-icon btn-soft-secondary text-white rounded-circle" href="{{ _footer.info__social_media.twitter }}" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn btn-md btn-icon btn-soft-secondary text-white rounded-circle" href="{{ _footer.info__social_media.linkedin }}" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- End Social Networks -->
+    </div>
+  </div>
+
+  <!-- SVG Background Shape -->
+  <figure class="w-100 position-absolute bottom-0 left-0">
+    <img class="img-fluid" src="@@autopath/assets/svg/components/isometric-squares.svg">
+  </figure>
+  <!-- End SVG Background Shape -->
+</footer>
+
+{# -------------------------------------- #}
+{# ------- JS & CSS files required ------ #}
+{# -------------------------------------- 
+
+<!-- JS Implementing Plugins -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="@@autopath/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+
+<!-- JS Front -->
+<script src="@@autopath/assets/js/hs.validation.js"></script> #}
+
+{% macro contactFormScript() %}
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF FORM VALIDATION
+      // =======================================================
+      $('#contactForm').each(function() {
+        var validation = $.HSCore.components.HSValidation.init($(this), {
+          onkeyup: false,
+          rules: {
+            name: {
+              required: true,
+              minlength: 3
+            },
+            email: {
+              required: true,
+              email: true
+            },
+            phone: {
+              required: true,
+              phone: true
+            },
+            message: {
+              required: true,
+              minlength: 10
+            }
+          },
+          messages: {
+            name: {
+              required: "{{ _footer.form__inputs.name.error_messages.required }}",
+              minlength: "{{ _footer.form__inputs.name.error_messages.validation }}"
+            },
+            email: {
+              required: "{{ _footer.form__inputs.email.error_messages.required }}",
+              email: "{{ _footer.form__inputs.email.error_messages.validation }}"
+            },
+            phone: {
+              required: "{{ _footer.form__inputs.phone.error_messages.required }}",
+              phone: "{{ _footer.form__inputs.phone.error_messages.validation }}"
+            },
+            message: {
+              required: "{{ _footer.form__inputs.message.error_messages.required }}",
+              minlength: "{{ _footer.form__inputs.message.error_messages.validation }}"
+            },
+            terms: "{{ _footer.form__inputs.terms.error_message }}"
+          },
+          submitHandler: ($form, event) => {
+            // Calls the "onSubmit" function
+            // onSubmit(event);
+          }
+        });
+      });
+
+      $.validator.addMethod("phone", function(value, element) {
+        regex = new RegExp(/^[+]{0,1}[0-9]{0,3}[-\s]{0,1}[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s/0-9]*$/g)
+        return regex.test(value);
+      });
+    });
+  </script>
+{% endmacro %}

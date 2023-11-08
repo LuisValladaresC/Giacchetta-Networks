@@ -1,0 +1,61 @@
+# -------------------------------------- #
+# -------------- Template -------------- #
+# -------------------------------------- #
+
+# Share Section
+share__title: 'Compartir:'
+
+# Related Articles
+related__title: 'Historias Relacionadas'
+
+# Subscribe Section
+subscribe__title: 'Mantente informado'
+subscribe__description: 'Obtenga los ultimos desarrollos de Giacchetta Networks.'
+
+subscribe__form_inputs: 
+  email:
+    label: 'Correo Electronico'
+    placeholder: 'Correo Electronico'
+
+subscribe__form_submit: 'Subscribase'
+
+# -------------------------------------- #
+# -------------- Articles -------------- #
+# -------------------------------------- #
+
+# This matrix defines each of the articles available on the "blog" page, it will also create its corresponding page using the "Article" template.
+
+# The 'page_config.file_name' attribute defines the name and path of the page to be created
+# The 'page_config.head_title' attribute defines the name of the tab in the browser and helps improve SEO
+
+# The "date" attribute is used to sort items on the "Blog" page and must be defined in the "MMDDYY" format.
+# The attribute 'image' defines the image of the article for the blog cards, for its main page, and even for the rich content. For this reason, it is recommended that it be landscape (recommended resolution: 900x450 px)
+# The 'content' attribute defines the main content of the page and allows to use Markdown and HTML
+
+articles:
+  - page_config:
+      file_name: 'scrum-or-kanban-for-devops.html'
+      head_title: 'Scrum or Kanban for DevOps? - Giacchetta Networks'
+    title: 'Scrum o Kanban para DevOps?'
+    description: 'Cualquier empresa que pase de Developer_SysAdmin a DevOps debe evaluar el mejor marco de trabajo agil.'
+    image: '@@autopath/assets/img/900x450/img12.jpg'
+    date: '5/3/2021'
+    tags:
+      - 'DevOps'
+      - 'Kanban'
+      - 'Scrum'
+      - 'Agile'
+    content: |
+      Al igual que con cualquier metodología de gestión de proyectos, no existe un marco que sea mejor el 100% del tiempo. Puede elegir Kanban para algunos proyectos pero desea implementar Scrum para otros o forzar Scrum directamente para todos.
+
+      Considere qué nivel de cambio desea introducir en su equipo. Si va a agregar algo sobre un marco existente con pequeños cambios incrementales, Kanban es una mejor opción. Si está buscando realizar un cambio de proceso más significativo, sería mejor implementar Scrum.
+
+      ### Kanban vs. Scrum: ¿Qué pasa si no puedes elegir?
+
+      Cientos de equipos están utilizando modelos híbridos influenciados tanto por Scrum como por Kanban. Aquí es donde puede adaptar ambos marcos ágiles a algo nuevo que funcione para su equipo. **DevOps es una metodología completa y única que a veces es difícil de entender e incluso más, de implementar**.
+
+      Si está comenzando con DevOps, le sugerimos implementar un tablero Kanban y practicar ceremonias ligeras. Cuando su equipo se sienta cómodo trabajando con problemas, estimaciones, tableros, reuniones de standUp y entregue adecuadamente, puede comenzar a implementar algunas ceremonias y herramientas útiles de Scrum como Sprints, planificación y reuniones retrospectivas.
+
+      Como dije inicialmente, todos quieren comenzar a implementar Scrum, pero **si su equipo no tiene experiencia con este marco, terminará usando Scrum como un Kanban pero sin un flujo de implementación continuo**. Al igual que con cualquier metodología de gestión de proyectos, no existe un marco que sea mejor el 100% del tiempo. Puede elegir Kanban para algunos proyectos pero desea implementar Scrum para otros o forzar Scrum directamente para todos.
+
+      Considere qué nivel de cambio desea introducir en su equipo. Si va a agregar algo sobre un marco existente con pequeños cambios incrementales, Kanban es una mejor opción. Si está buscando realizar un cambio de proceso más significativo, sería mejor implementar Scrum.

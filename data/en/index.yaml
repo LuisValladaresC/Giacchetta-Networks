@@ -1,0 +1,100 @@
+---
+# -------------------------------------- #
+# -------------- General --------------- #
+# -------------------------------------- #
+
+page__title: 'Giacchetta Networks - Business - Project - Marketing'
+
+# -------------------------------------- #
+# ------------ Hero Section ------------ #
+# -------------------------------------- #
+
+hero__title: 'Discover how to innovate faster'
+hero__subtitle: 'With our perfectly synchronized service network for the development of any IT project. We work on our own projects and those of third parties. We deliver on time and at low cost!!'
+hero__video:
+  link: 'How it works'
+  url: ''
+  caption: ''
+hero__image: '@@autopath/assets/img/750x750/img2.jpg'
+
+# -------------------------------------- #
+# ---------- Services Section ---------- #
+# -------------------------------------- #
+
+services__title: Services
+services__subtitle: Building continuous improvements to innovate faster
+
+services:
+  - title: 'Business Development'
+    description: 'Creating a long-term value for an organization from customers, markets, and relationships. Doing focus on speed networking.'
+    image: '@@autopath/assets/svg/icons/icon-5.svg'
+    url: '#'
+
+  - title: 'Project Development'
+    description: 'Designing Agile workflows to empower your projects and your team. Identifying bottlenecks and free up your mind to build better ideas.'
+    image: '@@autopath/assets/svg/icons/icon-14.svg'
+    url: '@@autopathwithlang/project-development.html'
+
+  - title: 'Marketing Development'
+    description: 'Define a marketing strategy expanding the potential market through new users or new uses. Identifying new market segments for current products'
+    image: '@@autopath/assets/svg/icons/icon-29.svg'
+    url: '#'
+
+# You can use Markdown and HTML
+services__synthesis: 
+  main: |
+    We help companies in three essential layers, Marketing, Business, and Project Development. Thus, our qualified team of business professionals analyzes your request and prepares an action plan that meets all your expectations.
+  collapsible: |
+    Our first objective is to listen to you, which may sound weird but to innovate in such a competitive world; we can’t duplicate what others do. Innovation means be original and disruptive.
+
+    Doing focus on Project Management, we help companies to build strong partnerships and grow faster. A dedicated team of Project Managers will ensure the correct path.
+
+# -------------------------------------- #
+# ---------- Projects Section ---------- #
+# -------------------------------------- #
+
+projects__title: Projects
+projects__subtitle: We are helping those projects to innovate faster
+
+projects:
+  - title: 'Moegui'
+    #category: 'Business Development'
+    description: |
+      Moegui is a consulting company that focuses on build continuous value and delivers faster. The Company’s goal is always to keep in mind that no matter what, we help this company grow up from scratch and provide all resources to innovate.
+
+      From direct consulting services on DevOps, TestOps, and SecOps to curated AWS, GCP, and Azure Stacks, Moegui brings any project or budget the best solution.
+    url: '#'
+    image: '@@autopath/assets/svg/illustrations/knowledgebase-community-1.svg'
+    background_color_class: 'bg-soft-primary'
+
+  - title: 'CarahAI'
+    #category: 'Business Development'
+    description: |
+      CarahAI is a SaaS company that applies a learning-by-practice approach, bringing our clients a new way to self-training their employees. We offer from a Careers to individual Subjects to leverage your Team knowledge.
+
+      Using selected practices, we provide a straight path to success, granting a sandbox for every trainee and human support for any questions.it.
+    url: '#'
+    image: '@@autopath/assets/img/mockups/img13.png'
+    background_color_class: 'bg-soft-info'
+
+# -------------------------------------- #
+# ------------ About Section ----------- #
+# -------------------------------------- #
+
+about__title: About
+about__subtitle: Know the founders
+
+about__team:
+  - name: 'Giselle Yoshimiya'
+    title: 'Business & Marketing Manager'
+    image: '@@autopath/assets/img/customs/giselle.png'
+    email: ''
+    twitter: '#'
+    linkedin: '#'
+
+  - name: 'Luciano Giacchetta'
+    title: 'IT Project Manager & DevOps Expert'
+    image: '@@autopath/assets/img/customs/luciano.png'
+    email: ''
+    twitter: '#'
+    linkedin: '#'
